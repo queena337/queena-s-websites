@@ -50,13 +50,14 @@ window.addEventListener("scroll", () => {
 });
 
 // ==================== TYPING ANIMATION ====================
-const words = ["Web Designer", "UI/UX Design", "Creative Designer"];
+const words = ["Web Designer", "UI/UX Design", "Frontend Developer", "Creative Designer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 const typedElement = document.querySelector(".typed");
 
 function typeEffect() {
+    if (!typedElement) return;
     const currentWord = words[wordIndex];
     
     if (isDeleting) {
@@ -119,7 +120,7 @@ function animateStats() {
 
 // ==================== SCROLL REVEAL ANIMATION ====================
 function checkScroll() {
-    const elements = document.querySelectorAll(".about-image, .about-text, .service-card, .portfolio-item, .stat-item, .contact-info, .contact-form");
+    const elements = document.querySelectorAll(".about-image, .about-text, .service-card, .portfolio-item, .stat-item, .contact-info");
     
     elements.forEach(el => {
         const elementTop = el.getBoundingClientRect().top;
@@ -154,7 +155,7 @@ function checkScroll() {
 }
 
 // Add visible class to elements initially
-document.querySelectorAll(".about-image, .about-text, .service-card, .portfolio-item, .stat-item, .contact-info, .contact-form").forEach(el => {
+document.querySelectorAll(".about-image, .about-text, .service-card, .portfolio-item, .stat-item, .contact-info").forEach(el => {
     el.classList.add("animate-on-scroll");
 });
 
@@ -188,16 +189,6 @@ if (filterButtons.length > 0) {
                 }
             });
         });
-    });
-}
-
-// ==================== CONTACT FORM SUBMIT ====================
-const contactForm = document.getElementById("contactForm");
-if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert("Terima kasih! Pesan Anda telah terkirim.");
-        contactForm.reset();
     });
 }
 
