@@ -55,9 +55,9 @@
                     <span class="typing-text">Saya adalah </span>
                     <span class="typed"></span>
                 </div>
-                <p>Web Designer yang berdedikasi menciptakan pengalaman digital yang indah dan fungsional.</p>
+                <p>Web Designer & Frontend Developer yang berdedikasi menciptakan pengalaman digital yang indah dan fungsional.</p>
                 <div class="hero-buttons">
-                    <a href="assets/cv queena paramitha.pdf" target="_blank" class="btn btn-primary">
+                    <a href="assets/cv 2.pdfc" target="_blank" class="btn btn-primary">
                         <i class="fas fa-file-pdf"></i> Lihat CV
                     </a>
                     <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Saya Adalah Web Designer Kreatif</h3>
+                    <h3>Saya Adalah Web Designer & Frontend Developer Kreatif</h3>
                     <p>Saya memiliki passion dalam menciptakan desain website yang menarik dan user-friendly. Dengan pengalaman lebih dari 2 tahun di Sekolah SMKN 1 Ciomas web design, saya telah mengerjakan berbagai proyek website dari berbagai Tugas.</p>
                     <div class="info-list">
                         <div class="info-item">
@@ -128,37 +128,51 @@
                                 <div class="skill-progress" data-width="92%"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <span>Frontend Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section dengan Gambar -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
                 <span class="subtitle">Portfolio</span>
-                <h2>Proyek Web Design Saya</h2>
+                <h2>Proyek Web Saya</h2>
                 <div class="underline"></div>
             </div>
+
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="website">Website Jadi</button>
+            </div>
+
             <div class="portfolio-grid">
-                <!-- Project 1 -->
-                <div class="portfolio-item">
+                <!-- PROJECT DESIGN 1 - Dashboard -->
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
-                            <img src="assets/dashboard admin mekarjaya.png" alt="Company Profile Mekarjaya">
+                            <img src="assets/dashboard%20admin%20mekarjaya.png" alt="Dashboard Admin Mekarjaya">
                         </div>
                         <div class="portfolio-info">
-                            <h3>Dashboard admin - Mekarjaya</h3>
-                            <p>Desain website company profile coffee shop dengan design simple dan menarik</p>
-                            <a href="https://www.figma.com/design/p6EXMjODDtzw3GWtTEzr98/MEKARJAYA?node-id=0-1&t=0Jjknqu0jlwnQKEQ-1" class="portfolio-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                            <h3>Dashboard Admin - Mekarjaya</h3>
+                            <p>Desain dashboard admin coffee shop dengan design simple dan menarik</p>
+                            <a href="https://www.figma.com/design/p6EXMjODDtzw3GWtTEzr98/MEKARJAYA?node-id=0-1&t=0Jjknqu0jlwnQKEQ-1" target="_blank" class="portfolio-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="portfolio-item">
+                <!-- PROJECT DESIGN 2 - Perpustakaan -->
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-card">
                         <div class="portfolio-image">
                             <img src="assets/perpustakaan.png" alt="Perpustakaan Sekolah">
@@ -166,10 +180,65 @@
                         <div class="portfolio-info">
                             <h3>Perpustakaan Sekolah</h3>
                             <p>SMK Negeri 1 Ciomas - Website perpustakaan untuk memudahkan siswa meminjam buku</p>
-                            <a href="https://www.figma.com/design/2BCA4zHvxkpH9jSBCFsaeM/Untitled?node-id=0-1&t=t8VFyvQjzT4H3iMq-1" class="portfolio-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://www.figma.com/design/2BCA4zHvxkpH9jSBCFsaeM/Untitled?node-id=0-1&t=t8VFyvQjzT4H3iMq-1" target="_blank" class="portfolio-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!-- PROJECT WEBSITE 1 - Portfolio Website -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/portofolio.png" alt="Portfolio Website">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Portfolio Website - Queena</h3>
+                            <p>Website portfolio profesional dengan HTML, CSS, dan JavaScript</p>
+                            <a href="https://queena337.github.io/queena-s-websites/" target="_blank" class="portfolio-link">Kunjungi Website <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT WEBSITE 2 - Landing Page -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/cuanmart.png" alt="Landing Page Coffee Shop">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Cuan Mart - E-commerse</h3>
+                            <p>Website e-commerse simple namun modern.</p>
+                            <a href="https://queena337.github.io/Cuanmart-website/" target="_blank" class="portfolio-link">Kunjungi Website <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT WEBSITE 3 - Company Profile -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/company-profile.png" alt="Company Profile">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Company Profile - Coffe Shop Mekar Jaya</h3>
+                            <p>Website company profile profesional dengan desain modern</p>
+                            <a href="#" target="_blank" class="portfolio-link">Kunjungi Website <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT WEBSITE 4 - E-Commerce -->
+                <div class="portfolio-item" data-category="website">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="assets/smartscholl.png" alt="E-Commerce Store">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>SmartSchool - Bimbel Cerdas Bangsa</h3>
+                            <p>Toko online fashion dengan sistem pembayaran terintegrasi</p>
+                            <a href=" https://queena337.github.io/website-pendaftaran/" target="_blank" class="portfolio-link">Kunjungi Website <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -282,6 +351,28 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <p>Proyek Web Selesai</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20">0</div>
+                    <p>Klien Puas</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <p>Website Terjaga</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <p>Tahun Pengalaman</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -298,11 +389,10 @@
                     <p>Ada proyek website menarik? Jangan ragu untuk menghubungi saya.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <h4>Telepon</h4>
-                                <p>+62 857 7620 6043</p>
-                            </div>
+                            <a href="https://wa.me/message/BHILZPOFEBVUF1" target="_blank" class="wa-link">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>+62 857 7620 6043</span>
+                            </a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
